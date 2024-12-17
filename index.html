@@ -1,25 +1,21 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>Modern Portfolio Template</title>
+    <title>Modern Portfolio</title>
     <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <!-- Bootstrap 5 CSS -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      crossorigin="anonymous"
     />
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css" />
   </head>
-
   <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <!-- Header/Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
       <div class="container">
         <a class="navbar-brand fw-bold" href="#">MyPortfolio</a>
         <button
@@ -36,13 +32,13 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link active" href="#">Home</a>
+              <a class="nav-link active" href="#home">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#about">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#services">Services</a>
+              <a class="nav-link" href="#projects">Projects</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#contact">Contact</a>
@@ -53,32 +49,30 @@
     </nav>
 
     <!-- Hero Section -->
-    <section class="hero-section d-flex align-items-center">
-      <div class="container text-center text-white">
-        <h1 class="display-3 fw-bold mb-3">Build Your Stunning Website</h1>
-        <p class="lead mb-4">
-          Professional, modern, and responsive design for your projects.
+    <section id="home" class="hero-section text-white d-flex align-items-center">
+      <div class="container text-center">
+        <h1 class="display-3 fw-bold mb-4">Welcome to MyPortfolio</h1>
+        <p class="lead mb-5">
+          Build modern and stunning websites with ease.
         </p>
-        <a href="#services" class="btn btn-primary btn-lg">Get Started</a>
-        <a href="#about" class="btn btn-outline-light btn-lg">Learn More</a>
+        <a href="#projects" class="btn btn-primary btn-lg">Explore Projects</a>
       </div>
     </section>
 
     <!-- About Section -->
-    <section id="about" class="py-5">
+    <section id="about" class="py-5 bg-light">
       <div class="container">
         <div class="row align-items-center">
-          <div class="col-md-6">
-            <h2 class="fw-bold mb-4">About Us</h2>
+          <div class="col-md-6 mb-4">
+            <h2 class="fw-bold">About Me</h2>
             <p>
-              We build clean, responsive, and professional websites tailored to
-              your needs. Our templates are designed to impress your audience
-              and grow your business.
+              I am a professional web developer with experience building modern
+              websites that are both functional and visually appealing.
             </p>
           </div>
           <div class="col-md-6">
             <img
-              src="https://source.unsplash.com/500x400/?technology"
+              src="https://source.unsplash.com/500x400/?developer"
               class="img-fluid rounded"
               alt="About Image"
             />
@@ -87,36 +81,60 @@
       </div>
     </section>
 
-    <!-- Services Section -->
-    <section id="services" class="py-5 bg-light">
+    <!-- Projects Section -->
+    <section id="projects" class="py-5">
       <div class="container text-center">
-        <h2 class="fw-bold mb-5">Our Services</h2>
+        <h2 class="fw-bold mb-5">My Projects</h2>
         <div class="row">
-          <div class="col-md-4">
-            <div class="card border-0 shadow-sm p-4">
-              <h4>Web Development</h4>
-              <p>
-                Custom, responsive, and modern websites built using the latest
-                technologies.
-              </p>
+          <!-- Project Card 1 -->
+          <div class="col-md-4 mb-4">
+            <div class="card shadow-sm">
+              <img
+                src="https://source.unsplash.com/400x300/?website"
+                class="card-img-top"
+                alt="Project 1"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Project 1</h5>
+                <p class="card-text">
+                  A clean and modern website built for businesses.
+                </p>
+                <a href="#" class="btn btn-primary">View Details</a>
+              </div>
             </div>
           </div>
-          <div class="col-md-4">
-            <div class="card border-0 shadow-sm p-4">
-              <h4>UI/UX Design</h4>
-              <p>
-                Clean and user-friendly designs tailored to improve user
-                experience.
-              </p>
+          <!-- Project Card 2 -->
+          <div class="col-md-4 mb-4">
+            <div class="card shadow-sm">
+              <img
+                src="https://source.unsplash.com/400x300/?app"
+                class="card-img-top"
+                alt="Project 2"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Project 2</h5>
+                <p class="card-text">
+                  A responsive application for mobile and desktop users.
+                </p>
+                <a href="#" class="btn btn-primary">View Details</a>
+              </div>
             </div>
           </div>
-          <div class="col-md-4">
-            <div class="card border-0 shadow-sm p-4">
-              <h4>SEO Optimization</h4>
-              <p>
-                Improve your site's visibility and ranking with search engine
-                optimization.
-              </p>
+          <!-- Project Card 3 -->
+          <div class="col-md-4 mb-4">
+            <div class="card shadow-sm">
+              <img
+                src="https://source.unsplash.com/400x300/?portfolio"
+                class="card-img-top"
+                alt="Project 3"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Project 3</h5>
+                <p class="card-text">
+                  Showcase your work and projects in style.
+                </p>
+                <a href="#" class="btn btn-primary">View Details</a>
+              </div>
             </div>
           </div>
         </div>
@@ -125,16 +143,12 @@
 
     <!-- Footer -->
     <footer class="bg-dark text-white text-center py-4">
-      <p class="mb-0">&copy; 2024 MyPortfolio. All rights reserved.</p>
+      <p class="mb-0">&copy; 2024 MyPortfolio. All Rights Reserved.</p>
     </footer>
 
-    <!-- Bootstrap 5 JS -->
+    <!-- Bootstrap JS -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-      crossorigin="anonymous"
     ></script>
-
-    <!-- Custom JS -->
-    <script src="js/script.js"></script>
   </body>
 </html>
