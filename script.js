@@ -1,9 +1,10 @@
-// Custom JavaScript
-document.addEventListener('DOMContentLoaded', () => {
-    const learnMoreBtn = document.getElementById('learnMoreBtn');
-  
-    learnMoreBtn.addEventListener('click', () => {
-      alert('Thank you for clicking! Explore more on our website.');
+// Smooth Scroll Effect
+document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+  anchor.addEventListener("click", function (e) {
+    e.preventDefault();
+
+    document.querySelector(this.getAttribute("href")).scrollIntoView({
+      behavior: "smooth",
     });
   });
-  
+});
