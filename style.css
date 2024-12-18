@@ -1,28 +1,407 @@
-/* General Styles */
-body {
-  font-family: Arial, sans-serif;
+/* General Reset */
+body,
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  background-color: #161616;
+  /* Solid black background */
 }
 
-/* Hero Section */
-.hero-section {
-  background: url("https://source.unsplash.com/1600x900/?technology,work")
-    no-repeat center center/cover;
+/* New Fonts */
+@font-face {
+  font-family: 'Motterdam';
+  src: url('../fonts/Motterdam-K74zp.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'CormorantGaramond';
+  src: url('../fonts/CormorantGaramond-Light.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'SpaceGrotesk';
+  src: url('../fonts/SpaceGrotesk-SemiBold.ttf') format('truetype');
+}
+
+
+/* Navbar Styles */
+.navbar {
+  background-color: 1d1c1c;
+  padding: 1rem 0;
+}
+
+.nav-item {
+  font-family: 'SpaceGrotesk';
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff;
+  font-family: 'Motterdam', sans-serif;
+}
+
+.nav-link {
+  color: #ffffff !important;
+  margin-right: 1rem;
+  transition: color 0.3s;
+}
+
+.nav-link:hover {
+  color: #364133 !important;
+  /* Highlight */
+}
+
+.navbar .nav-link {
+  font-family: 'SpaceGrotesk', sans-serif;
+  font-weight: bolder;
+  color: #ffffff;
+}
+
+/* Right-Aligned Hero Content */
+.hero-content {
+  position: absolute;
+  top: 50%;
+  right: 5%;
+  /* Align content to the right */
+  transform: translateY(-50%);
+  color: #fff;
+}
+
+/* Navbar Center Alignment */
+.navbar .container {
+  justify-content: center;
+  /* Center navbar items */
+}
+
+.navbar-nav .nav-link {
+  margin: 0 1.5rem;
+  /* Add spacing between links */
+  color: #ffffff !important;
+  transition: color 0.3s;
+  font-family: 'CormorantGaramond';
+  font-size: large;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #c8f7bc !important;
+}
+
+
+.hero-content h1 {
+  font-family: 'CormorantGaramond';
+  font-size: 4rem;
+  text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.hero-content span {
+  color: #afd4af;
+  /* Accent color */
+}
+
+.hero-content p {
+  font-size: 1.25rem;
+  margin-top: 0.5rem;
+}
+
+/* Left-aligned Image (No Changes) */
+.left-image {
+  position: absolute;
+  top: 100px;
+  left: 0;
+  padding-left: 20px;
+  z-index: 10;
+}
+
+.left-image img {
+  width: 1090px;
+  filter: grayscale(100%);
+  opacity: 0.85;
+  border-radius: 10px;
+}
+
+/* Adjust Hero Section */
+.hero {
   height: 100vh;
   position: relative;
+  background: none;
+  /* Remove the background image */
+  color: #fff;
+  text-shadow: 0px 2px 5px #1d1c1c;
 }
 
-.hero-section::before {
+.hero::before {
   content: "";
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.5);
-  z-index: 1;
+  background: #161616;
+  /* Dark overlay */
 }
 
-.hero-section .container {
+.hero .container {
   position: relative;
   z-index: 2;
+}
+
+.hero h1 {
+  font-family: 'Motterdam';
+  font-size: 4rem;
+}
+
+.hero span {
+  font-family: 'Motterdam';
+  color: #ffffff;
+  /* Accent */
+}
+
+.hero p {
+  font-size: 1.25rem;
+  max-width: 600px;
+  margin: 0 auto;
+  font-family: 'CormorantGaramond';
+}
+
+.btn-outline-light {
+  border-color: #ffffff;
+  color: #ffffff;
+}
+
+.btn {
+  font-family: 'SpaceGrotesk';
+}
+
+.btn-outline-light:hover {
+  background-color: #2f4133;
+  color: #e7e7e7;
+}
+
+/* Scroll Stamps Container */
+.scroll-stamps {
+  position: fixed;
+  top: 50%;
+  /* Center vertically */
+  right: 2%;
+  /* Position stamps to the right */
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  z-index: 100;
+}
+
+.scroll-stamps .stamp {
+  width: 2px;
+  height: 50px;
+  background-color: #aaa;
+  /* Light gray */
+  transition: background-color 0.3s, height 0.3s;
+  cursor: pointer;
+  position: relative;
+}
+
+.scroll-stamps .stamp:hover {
+  background-color: #53664e;
+  /* Highlighted green */
+  height: 60px;
+  /* Slightly taller on hover */
+}
+
+/* Section Labels */
+.scroll-stamps .stamp::after {
+  content: attr(data-section);
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #fff;
+  font-family: 'SpaceGrotesk', sans-serif;
+  font-size: 0.85rem;
+  white-space: nowrap;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.scroll-stamps .stamp:hover::after {
+  opacity: 1;
+}
+
+/* Projects Section */
+#projects {
+  background-color: #202020;
+  /* Dark background for projects */
+}
+
+#projects h2 {
+  font-family: 'Motterdam', sans-serif;
+  font-size: 2.5rem;
+}
+
+.project-card {
+  background-color: #414040;
+  /* Card background */
+  border: none;
+  border-radius: 8px;
+  overflow: hidden;
+  color: #fff;
+  transition: transform 0.3s ease-in-out;
+}
+
+.project-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  /* Hover effect */
+}
+
+.project-card .card-title {
+  font-family: 'CormorantGaramond', sans-serif;
+  font-size: 1.25rem;
+  color: #ffffff;
+}
+
+.project-card .card-text {
+  font-family: 'CormorantGaramond', serif;
+  color: #b9b9b9;
+}
+
+/* Skills Section */
+#skills {
+  background-color: #202020;
+  /* Dark background to match your theme */
+}
+
+#skills h2 {
+  font-size: 3rem;
+  color: #c8f7bc;
+  /* Highlighted heading color */
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.progress {
+  background-color: #3a3a3a;
+  /* Darker background for progress bar */
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  font-family: 'SpaceGrotesk', sans-serif;
+  font-weight: bold;
+  font-size: 0.9rem;
+  line-height: 20px;
+  color: #161616;
+  /* Dark text for contrast */
+  text-align: center;
+  border-radius: 10px;
+  transition: width 1s ease-in-out;
+}
+
+.progress-bar.bg-success {
+  background-color: #79a67a !important;
+  /* Custom green */
+}
+
+.progress-bar.bg-info {
+  background-color: #6fa3ce !important;
+  /* Custom blue */
+}
+
+.progress-bar.bg-warning {
+  background-color: #d8b84e !important;
+  /* Custom yellow */
+}
+
+.progress-bar.bg-danger {
+  background-color: #b85c5c !important;
+  /* Custom red */
+}
+
+.progress-bar.bg-secondary {
+  background-color: #6c757d !important;
+  /* Default gray */
+}
+
+.progress-bar.bg-primary {
+  background-color: #6e7eb5 !important;
+  /* Custom purple-blue */
+}
+
+/* About Me Section */
+#about {
+  background-color: #fff;
+  color: #444;
+}
+
+#about h1 {
+  font-family: 'Arial', sans-serif;
+  font-size: 3rem;
+  font-weight: bold;
+  color: #222;
+  margin-bottom: 20px;
+}
+
+#about p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #555;
+}
+
+#about img {
+  max-width: 100%;
+  width: 400px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Contact Section */
+#contact {
+  background-color: #1d1c1c;
+  padding: 50px 0;
+}
+
+#contact h2 {
+  font-family: 'Motterdam', sans-serif;
+  font-size: 2.5rem;
+  color: #c8f7bc;
+}
+
+#contact p {
+  font-family: 'SpaceGrotesk', sans-serif;
+  font-size: 1.2rem;
+  color: #ffffff;
+}
+
+.social-icon {
+  width: 60px;
+  height: 60px;
+  filter: grayscale(100%);
+  transition: filter 0.3s, transform 0.3s;
+}
+
+.social-icon:hover {
+  filter: none;
+  transform: scale(1.1);
+}
+
+/* Scroll Stamps Active State */
+.scroll-stamps .stamp.active {
+  background-color: #c8f7bc;
+  /* Highlight color */
+  height: 60px;
+}
+
+.scroll-stamps .stamp.active::after {
+  opacity: 1;
+  font-weight: bold;
+  color: #c8f7bc;
 }

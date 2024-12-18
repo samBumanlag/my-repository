@@ -1,154 +1,273 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Modern Portfolio</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- Bootstrap CSS -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Web Designer & Developer Portfolio">
+    <title>Web Developer | Sam Bumanlag</title>
+    <!-- Favicon -->
+    <link rel="icon" href="assets/icon title.png" type="image/x-icon">
+    <!-- Bootstrap 5 CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
-  <body>
-    <!-- Header/Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
-      <div class="container">
-        <a class="navbar-brand fw-bold" href="#">MyPortfolio</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link active" href="#home">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#about">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#projects">Projects</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact</a>
-            </li>
-          </ul>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container d-flex justify-content-center">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#home">Home</a>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Let's Talk</a></li>
+            </ul>
         </div>
-      </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero-section text-white d-flex align-items-center">
-      <div class="container text-center">
-        <h1 class="display-3 fw-bold mb-4">Welcome to MyPortfolio</h1>
-        <p class="lead mb-5">
-          Build modern and stunning websites with ease.
-        </p>
-        <a href="#projects" class="btn btn-primary btn-lg">Explore Projects</a>
-      </div>
-    </section>
+    <!-- Image Section -->
+    <div class="left-image">
+        <img src="assets/main pic.png" alt="Profile Picture" class="img-fluid">
+    </div>
 
-    <!-- About Section -->
-    <section id="about" class="py-5 bg-light">
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-md-6 mb-4">
-            <h2 class="fw-bold">About Me</h2>
-            <p>
-              I am a professional web developer with experience building modern
-              websites that are both functional and visually appealing.
-            </p>
-          </div>
-          <div class="col-md-6">
-            <img
-              src="https://source.unsplash.com/500x400/?developer"
-              class="img-fluid rounded"
-              alt="About Image"
-            />
-          </div>
+    <!-- Hero Section -->
+    <header class="hero d-flex align-items-center" id="home">
+        <div class="container position-relative">
+            <div class="hero-content text-end">
+                <h1 class="display-3 fw-bold mt-4">Samantha <span class="fst">Bumanlag</span></h1>
+                <p class="lead">Web Designer & Developer</p>
+                <a href="#projects" class="btn btn-outline-light mt-4">Latest Projects</a>
+            </div>
         </div>
-      </div>
-    </section>
+    </header>
 
     <!-- Projects Section -->
     <section id="projects" class="py-5">
-      <div class="container text-center">
-        <h2 class="fw-bold mb-5">My Projects</h2>
-        <div class="row">
-          <!-- Project Card 1 -->
-          <div class="col-md-4 mb-4">
-            <div class="card shadow-sm">
-              <img
-                src="https://source.unsplash.com/400x300/?website"
-                class="card-img-top"
-                alt="Project 1"
-              />
-              <div class="card-body">
-                <h5 class="card-title">Project 1</h5>
-                <p class="card-text">
-                  A clean and modern website built for businesses.
-                </p>
-                <a href="#" class="btn btn-primary">View Details</a>
-              </div>
+        <div class="container text-center">
+            <h2 class="text-white mb-4">Recent Projects</h2>
+            <div class="row g-4">
+                <!-- Project 1 -->
+                <div class="col-md-4">
+                    <div class="card project-card h-100">
+                        <img src="assets/sonic.png" class="card-img-top" alt="Project 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Autosonic Car Accessories</h5>
+                            <p class="card-text">Autosonic car accessories online website for market and reviews. this
+                                includes autosonic's company profile, items, and contact.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 2 -->
+                <div class="col-md-4">
+                    <div class="card project-card h-100">
+                        <img src="assets/disapp.jpg" class="card-img-top" alt="Project 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Disappointmed</h5>
+                            <p class="card-text">A hospital management system, made using Apache Netbeans. this project
+                                consists of 3 section: management systems for healthcare professionals, patients, and
+                                nurses. this is an appointment system that is integrated with mySQL.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 3 -->
+                <div class="col-md-4">
+                    <div class="card project-card h-100">
+                        <img src="assets/dsp.png" class="card-img-top" alt="Project 3">
+                        <div class="card-body">
+                            <h5 class="card-title">DSP Applications</h5>
+                            <p class="card-text">Not necessary a website, but an application. it is made in python,
+                                using several packages. the application features 4 conversions for digital signal
+                                processing.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-          <!-- Project Card 2 -->
-          <div class="col-md-4 mb-4">
-            <div class="card shadow-sm">
-              <img
-                src="https://source.unsplash.com/400x300/?app"
-                class="card-img-top"
-                alt="Project 2"
-              />
-              <div class="card-body">
-                <h5 class="card-title">Project 2</h5>
-                <p class="card-text">
-                  A responsive application for mobile and desktop users.
-                </p>
-                <a href="#" class="btn btn-primary">View Details</a>
-              </div>
-            </div>
-          </div>
-          <!-- Project Card 3 -->
-          <div class="col-md-4 mb-4">
-            <div class="card shadow-sm">
-              <img
-                src="https://source.unsplash.com/400x300/?portfolio"
-                class="card-img-top"
-                alt="Project 3"
-              />
-              <div class="card-body">
-                <h5 class="card-title">Project 3</h5>
-                <p class="card-text">
-                  Showcase your work and projects in style.
-                </p>
-                <a href="#" class="btn btn-primary">View Details</a>
-              </div>
-            </div>
-          </div>
         </div>
-      </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="bg-dark text-white text-center py-4">
-      <p class="mb-0">&copy; 2024 MyPortfolio. All Rights Reserved.</p>
-    </footer>
+    <!-- Skills Section -->
+    <section id="skills" class="py-5">
+        <div class="container">
+            <h2 class="text-center text-white mb-5" style="font-family: 'Motterdam';">Skills</h2>
+            <div class="row">
+                <!-- Skill Bars -->
+                <div class="col-md-6 mb-4">
+                    <p class="text-white mb-1">HTML5</p>
+                    <div class="progress" style="height: 20px;">
+                        <div class="progress-bar bg-success" style="width: 60%;">60%</div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 mb-4">
+                    <p class="text-white mb-1">CSS</p>
+                    <div class="progress" style="height: 20px;">
+                        <div class="progress-bar bg-info" style="width: 45%;">45%</div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 mb-4">
+                    <p class="text-white mb-1">JavaScript</p>
+                    <div class="progress" style="height: 20px;">
+                        <div class="progress-bar bg-warning" style="width: 20%;">20%</div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 mb-4">
+                    <p class="text-white mb-1">mySQL</p>
+                    <div class="progress" style="height: 20px;">
+                        <div class="progress-bar bg-danger" style="width: 30%;">30%</div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 mb-4">
+                    <p class="text-white mb-1">PHP</p>
+                    <div class="progress" style="height: 20px;">
+                        <div class="progress-bar bg-secondary" style="width: 5%;">5%</div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 mb-4">
+                    <p class="text-white mb-1">Java</p>
+                    <div class="progress" style="height: 20px;">
+                        <div class="progress-bar bg-primary" style="width: 20%;">20%</div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 mb-4">
+                    <p class="text-white mb-1">C/C++</p>
+                    <div class="progress" style="height: 20px;">
+                        <div class="progress-bar bg-success" style="width: 40%;">40%</div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 mb-4">
+                    <p class="text-white mb-1">Python</p>
+                    <div class="progress" style="height: 20px;">
+                        <div class="progress-bar bg-info" style="width: 15%;">15%</div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 mb-4">
+                    <p class="text-white mb-1">Photoshop</p>
+                    <div class="progress" style="height: 20px;">
+                        <div class="progress-bar bg-warning" style="width: 60%;">60%</div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 mb-4">
+                    <p class="text-white mb-1">Premiere</p>
+                    <div class="progress" style="height: 20px;">
+                        <div class="progress-bar bg-danger" style="width: 40%;">40%</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" style="background-color: #fff; color: #444; padding: 50px 0;">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Text Content -->
+                <div class="col-md-6">
+                    <h1 style="font-family: 'Arial', sans-serif; font-size: 3rem; color: #222;">About me</h1>
+                    <p style="font-size: 1.2rem; line-height: 1.8; margin-top: 20px;">
+                        I'm an <strong>aspiring computer engineering student, and currently in my 4th year.</strong> I'm
+                        from Pampanga, Philippines.
+                    </p>
+                    <p style="line-height: 1.8;">
+                        I love going out of my comfort zone, but still lazy at times haha! When i get stressed from
+                        something, e.g coding, i make use of this to release my inner competitiveness and creativity.
+                    </p>
+                    <p style="line-height: 1.8;">
+                        Im not really good at coding, but i still try my best so i can still be me.
+                    </p>
+                </div>
+                <!-- Image Content -->
+                <div class="col-md-6 text-center">
+                    <img src="assets/kimmie.jpg" alt="About Me" style="max-width: 100%; height: auto;">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+        <div class="container text-center">
+            <h2 class="text-white mb-4">Let's Talk</h2>
+            <p class="text-white mb-5">
+                Feel free to reach out through any of the platforms below!
+            </p>
+            <div class="row justify-content-center">
+                <!-- Facebook -->
+                <div class="col-md-4 mb-3">
+                    <a href="https://www.facebook.com/bumanlagsam" target="_blank">
+                        <img src="assets/facebook-icon.png" alt="Facebook" class="social-icon">
+                    </a>
+                </div>
+                <!-- Instagram -->
+                <div class="col-md-4 mb-3">
+                    <a href="https://www.instagram.com/adultswim_tw/" target="_blank">
+                        <img src="assets/instagram-icon.png" alt="Instagram" class="social-icon">
+                    </a>
+                </div>
+                <!-- Email -->
+                <div class="col-md-4 mb-3">
+                    <a href="mailto:vleriobraoin@gmail.com">
+                        <img src="assets/email-icon.png" alt="Email" class="social-icon">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const stamps = document.querySelectorAll(".scroll-stamps .stamp");
+            const sections = document.querySelectorAll("section");
+
+            window.addEventListener("scroll", () => {
+                let current = "";
+
+                sections.forEach((section) => {
+                    const sectionTop = section.offsetTop - 100; // Adjust threshold
+                    const sectionHeight = section.clientHeight;
+
+                    if (pageYOffset >= sectionTop && pageYOffset < sectionTop + sectionHeight) {
+                        current = section.getAttribute("id");
+                    }
+                });
+
+                stamps.forEach((stamp) => {
+                    stamp.classList.remove("active");
+                    if (stamp.getAttribute("data-section").toLowerCase() === current) {
+                        stamp.classList.add("active");
+                    }
+                });
+            });
+        });
+    </script>
+
 
     <!-- Bootstrap JS -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-    ></script>
-  </body>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+
+    <!-- Scroll Stamps -->
+    <div class="scroll-stamps">
+        <div class="stamp" data-section="Home"></div>
+        <div class="stamp" data-section="Skills"></div>
+        <div class="stamp" data-section="Projects"></div>
+        <div class="stamp" data-section="About"></div>
+        <div class="stamp" data-section="Let's Talk"></div>
+    </div>
+
+</body>
+
 </html>
